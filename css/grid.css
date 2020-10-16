@@ -1,0 +1,38 @@
+.item1 { grid-area: header; }
+.item2 { grid-area: export; }
+.item3 { grid-area: list; }
+.item4 { grid-area: sidebar}
+.item5 { grid-area: footer; }
+.item6 { grid-area: messages; }
+.item7 { grid-area: editform; }
+.item8 { grid-area: stats; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'messages messages messages'
+    'header header header'
+    'list list editform'
+    'list list sidebar'
+    'list list stats'
+    'export export export'
+    'footer footer footer';
+  
+  grid-gap: 10px;
+  background-color: grey;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+div.item6 {
+  background-color: #FC0;
+  color: black;
+}
